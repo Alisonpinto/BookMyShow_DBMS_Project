@@ -59,7 +59,7 @@ public class loginController {
 
             }else{
                 if(result.next()){
-
+                    getData.userId = result.getInt("UserID");
                     alert = new Alert(Alert.AlertType.CONFIRMATION);
                     alert.setTitle("Information Message");
                     alert.setContentText("successfully logged in !!");

@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="530.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.moviesystem.mainformController">
    <children>
-      <AnchorPane fx:id="homeform" prefHeight="530.0" prefWidth="827.0" visible="false">
+      <AnchorPane fx:id="homeform" prefHeight="530.0" prefWidth="827.0">
          <children>
             <BorderPane prefHeight="530.0" prefWidth="838.0">
                <top>
@@ -31,17 +31,17 @@
                      <children>
                         <ImageView fx:id="img1edit" fitHeight="320.0" fitWidth="217.0" layoutX="79.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@jaws.jpg" />
+                              <Image url="@images/jaws.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="img2edit" fitHeight="320.0" fitWidth="217.0" layoutX="293.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@rocky.jpg" />
+                              <Image url="@images/rocky.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="img3edit" fitHeight="320.0" fitWidth="217.0" layoutX="507.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@spod.jpg" />
+                              <Image url="@images/spod.jpg" />
                            </image>
                         </ImageView>
                         <Button fx:id="bookbtn1" layoutX="89.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: red;" text="Book Now" textFill="WHITE">
@@ -80,7 +80,7 @@
             </BorderPane>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="seatform" prefHeight="530.0" prefWidth="838.0">
+      <AnchorPane fx:id="seatform" prefHeight="530.0" prefWidth="838.0" visible="false">
          <children>
             <BorderPane prefHeight="530.0" prefWidth="838.0">
                <top>
@@ -141,6 +141,11 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Button>
+                        <Button fx:id="paypage" layoutX="707.0" layoutY="44.0" mnemonicParsing="false" onAction="#goToPayment" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: red;" text="PAY NOW" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
                      </children>
                   </AnchorPane>
                </center>
@@ -166,10 +171,10 @@
                      <children>
                         <ImageView fx:id="payimg" fitHeight="378.0" fitWidth="260.0" layoutX="47.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@jaws.jpg" />
+                              <Image url="@images/jaws.jpg" />
                            </image>
                         </ImageView>
-                        <Button fx:id="paybtn" layoutX="341.0" layoutY="158.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="133.0" style="-fx-background-color: red;" text="Pay Now" textFill="WHITE">
+                        <Button fx:id="paybtn" layoutX="341.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleFinalPayment" prefHeight="39.0" prefWidth="133.0" style="-fx-background-color: red;" text="Pay Now" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
@@ -219,7 +224,7 @@
                      <children>
                         <ImageView fx:id="fimg" fitHeight="363.0" fitWidth="238.0" layoutX="56.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@jaws.jpg" />
+                              <Image url="@images/jaws.jpg" />
                            </image>
                         </ImageView>
                         <Text layoutX="356.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie  :" wrappingWidth="126.13671875">
