@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="530.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.moviesystem.mainformController">
+   <children>
+      <AnchorPane fx:id="homeform" prefHeight="530.0" prefWidth="827.0" visible="false">
+         <children>
+            <BorderPane prefHeight="530.0" prefWidth="838.0">
+               <top>
+                  <AnchorPane prefHeight="54.0" prefWidth="800.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="22.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BookMyShow" wrappingWidth="180.86099243164062">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="476.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="img1edit" fitHeight="320.0" fitWidth="217.0" layoutX="79.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@jaws.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img2edit" fitHeight="320.0" fitWidth="217.0" layoutX="293.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@rocky.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img3edit" fitHeight="320.0" fitWidth="217.0" layoutX="507.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@spod.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="bookbtn1" layoutX="89.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: red;" text="Book Now" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bookbtn2" layoutX="307.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: red;" text="Book Now" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bookbtn3" layoutX="514.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: red;" text="Book Now" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="mlabel1" layoutX="89.0" layoutY="334.0" prefHeight="19.0" prefWidth="198.0" text="JAWS">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mlabel2" layoutX="307.0" layoutY="334.0" prefHeight="19.0" prefWidth="198.0" text="ROCKY">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mlabel3" layoutX="514.0" layoutY="334.0" prefHeight="19.0" prefWidth="198.0" text="2001: A Space Odyssey">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="seatform" prefHeight="530.0" prefWidth="838.0">
+         <children>
+            <BorderPane prefHeight="530.0" prefWidth="838.0">
+               <top>
+                  <AnchorPane prefHeight="54.0" prefWidth="838.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BookMyShow" wrappingWidth="180.86099243164062">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bee0ff" height="46.0" layoutX="137.0" layoutY="372.0" stroke="BLACK" strokeType="INSIDE" width="587.0" />
+                        <Text layoutX="373.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Screen" wrappingWidth="57.38671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="111.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="111.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="111.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="c1" layoutX="258.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="1" />
+                        <Button fx:id="c2" layoutX="337.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="2" />
+                        <Button fx:id="c4" layoutX="492.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="4" />
+                        <Button fx:id="c3" layoutX="414.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="3" />
+                        <Button fx:id="c5" layoutX="573.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="5" />
+                        <Button fx:id="b1" layoutX="258.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="1" />
+                        <Button fx:id="b2" layoutX="337.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="2" />
+                        <Button fx:id="b4" layoutX="492.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="4" />
+                        <Button fx:id="b3" layoutX="414.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="3" />
+                        <Button fx:id="b5" layoutX="573.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="5" />
+                        <Button fx:id="a1" layoutX="337.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="1" />
+                        <Button fx:id="a3" layoutX="492.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="3" />
+                        <Button fx:id="a2" layoutX="414.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleSeatSelection" prefHeight="41.0" prefWidth="43.0" text="2" />
+                        <Label fx:id="screen_no" layoutX="436.0" layoutY="377.0" prefHeight="36.0" prefWidth="14.0" text="1">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="backbtn" layoutX="59.0" layoutY="44.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-color: red;" text="BACK" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="payform" prefHeight="530.0" prefWidth="838.0" visible="false">
+         <children>
+            <BorderPane prefHeight="530.0" prefWidth="838.0">
+               <top>
+                  <AnchorPane prefHeight="54.0" prefWidth="838.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="23.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BookMyShow" wrappingWidth="180.86099243164062">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="payimg" fitHeight="378.0" fitWidth="260.0" layoutX="47.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@jaws.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="paybtn" layoutX="341.0" layoutY="158.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="133.0" style="-fx-background-color: red;" text="Pay Now" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Text layoutX="341.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie  :" wrappingWidth="126.13671875">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="341.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price    :" wrappingWidth="126.13671875">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="paymname" layoutX="484.0" layoutY="40.0" prefHeight="54.0" prefWidth="315.0" text="JAWS">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="paymprice" layoutX="484.0" layoutY="94.0" prefHeight="54.0" prefWidth="105.0" text="₹ 300">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="finalform" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <BorderPane prefHeight="530.0" prefWidth="838.0">
+               <top>
+                  <AnchorPane prefHeight="54.0" prefWidth="838.0" style="-fx-background-color: red;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="21.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BookMyShow" wrappingWidth="180.86099243164062">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="fimg" fitHeight="363.0" fitWidth="238.0" layoutX="56.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@jaws.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="356.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie  :" wrappingWidth="126.13671875">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seats   :" wrappingWidth="137.33673095703125">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="356.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price    :" wrappingWidth="137.33673095703125">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#41bc6c" layoutX="354.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Successfully Booked!!" wrappingWidth="386.13677978515625">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="fmname" layoutX="493.0" layoutY="52.0" prefHeight="34.0" prefWidth="242.0" text="JAWS">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fseat" layoutX="494.0" layoutY="100.0" prefHeight="54.0" prefWidth="63.0" text="1">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fprice" layoutX="494.0" layoutY="146.0" prefHeight="54.0" prefWidth="105.0" text="₹ 300">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
